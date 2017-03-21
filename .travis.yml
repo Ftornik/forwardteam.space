@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+  - "6"
+
+sudo: false
+
+before_script:
+  - gem install scss_lint -v 0.48.0
+
+script:
+  - npm run lint
+  - npm run build
+
+notifications:
+  slack: hope-ua:eSKEvYMpz0KTwl2G1uGI0qmA
