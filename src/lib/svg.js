@@ -5,7 +5,7 @@ export const STATE_HOVER = 'hover';
 export const STATE_ACTIVE = 'active';
 
 const svg = (Component, { width = 0, height = 0 } = {}) => {
-    return class Svg extends Component {
+    return class Svg extends React.Component {
         static propTypes = {
             className: PropTypes.any,
             onClick: PropTypes.func
