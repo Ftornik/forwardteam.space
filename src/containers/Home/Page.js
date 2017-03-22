@@ -10,6 +10,7 @@ class HomePage extends Component {
             <div>
                 <Helmet { ...Meta() }/>
                 <Shared.Header/>
+                <Shared.Pins/>
             </div>
         );
     }
