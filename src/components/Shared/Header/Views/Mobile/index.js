@@ -12,9 +12,7 @@ import Styles from './Styles/main.scss';
 
 function Header() {
     return (
-        <section className={ Styles.headerComponent }>
-            Header
-        </section>
+        <section className={ Styles.headerComponent }/>
     );
 }
 

@@ -1,0 +1,79 @@
+& {
+  padding-top: px(72);
+  padding-bottom: px(72);
+  background: $color3;
+
+  .content {
+    display: flex;
+    margin-left: px(165);
+
+    &::before {
+      position: absolute;
+      top: px(88);
+      left: px(40);
+      width: px(487);
+      height: px(250);
+      background-image: url("../../../Assets/image-bg.svg");
+      background-size: cover;
+      content: '';
+      z-index: 0;
+    }
+
+    .image {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      width: px(256);
+      height: px(256);
+      background: $mainColor1;
+      border-radius: 50%;
+      overflow: hidden;
+      z-index: 10;
+      border: 4px solid $mainColor1;
+
+      i {
+        width: px(240);
+        transform: translate(px(5), px(5));
+      }
+    }
+
+    .information {
+      margin-top: px(86);
+      margin-left: px(60);
+
+      .name {
+        color: $color2;
+        font-size: px(56);
+      }
+
+      .progressBlock {
+        width: px(768);
+
+        .statusNames {
+          display: flex;
+          justify-content: space-between;
+          margin-top: px(26);
+
+          .name {
+            text-transform: uppercase;
+            color: $color4;
+            font-size: px(28);
+            letter-spacing: 2px;
+          }
+        }
+
+        .progressBar {
+          margin-top: px(12);
+          height: px(4);
+          background-image: url("../../../Assets/profileStatusBar-bg.svg");
+
+          .progress {
+            height: px(8);
+            background: $color5;
+            border-radius: px(8);
+          }
+        }
+      }
+    }
+  }
+}
