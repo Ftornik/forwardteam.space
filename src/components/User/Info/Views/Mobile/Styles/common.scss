@@ -5,12 +5,13 @@
 
   .content {
     display: flex;
+    position: relative;
     margin-left: px(165);
 
     &::before {
       position: absolute;
-      top: px(88);
-      left: px(40);
+      top: px(-10);
+      left: px(-100);
       width: px(487);
       height: px(250);
       background-image: url("../../../Assets/image-bg.svg");
