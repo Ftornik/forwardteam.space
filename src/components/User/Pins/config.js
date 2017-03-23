@@ -1,5 +1,5 @@
 const config = {
-    id: 'Shared.Pins'
+    id: 'User.Pins'
 };
 
 export default config;

@@ -16,7 +16,6 @@ import Mobile from './Views/Mobile/tpl';
  * Pixel Perfect and Breakpoints
  */
 import PixelPerfect from 'vendor/PixelPerfect/component';
-import BP from 'lib/breakpoints';
 
 /**
  * [ICONF]
@@ -69,7 +68,7 @@ class Pins extends Component {
          * [RV]
          * View
          */
-        let view = (
+        const view = (
             <Mobile mediaType={ mediaType }/>
         );
 

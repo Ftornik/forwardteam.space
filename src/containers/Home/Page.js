@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 
 import Meta from './Meta';
 import * as Shared from 'components/Shared';
+import * as User from 'components/User';
 
 class HomePage extends Component {
     render = () => {
@@ -10,7 +11,7 @@ class HomePage extends Component {
             <div>
                 <Helmet { ...Meta() }/>
                 <Shared.Header/>
-                <Shared.Pins/>
+                <User.Pins/>
             </div>
         );
     }
