@@ -11,11 +11,14 @@ import cx from 'classnames';
  */
 import Styles from './Styles/main.scss';
 
-import GoodStart from 'components/Assets/GoodStart';
-import ThreeStars from 'components/Assets/ThreeStars';
+import SprintImage from 'components/Assets/Sprint';
 
-function Sprint() {
-    const percent = 100;
+function Sprint(props) {
+    const { user, sprint } = props;
+
+    const sprintProgress = user.progress.sprints[sprint.id] ? user.progress.sprints[sprint.id] : null;
+
+    const percent = sprintProgress.amount;
     const maxPercent = 91;
 
     const progressStyle = {
@@ -26,16 +29,24 @@ function Sprint() {
         left: percent > maxPercent ? `${maxPercent}%` : `${percent}%`
     };
 
-    const className = cx({
-        [Styles.item]: true,
-        [Styles.active]: true
+    const spintReqs = sprint.requirements.map((req) => {
+        const reqDone = sprintProgress[req.id] ? sprintProgress[req.id] : false;
+
+        const reqClass = cx({
+            [Styles.item]: true,
+            [Styles.active]: reqDone
+        });
+
+        return (
+            <p className={ reqClass } key={ req.title }>{ req.title }</p>
+        );
     });
 
     return (
         <section className={ Styles.sprintComponent }>
             <div className={ Styles.info }>
-                <span className={ Styles.sprintNumber }>Спринт #1</span>
-                <h1 className={ Styles.title }>Личностный рост</h1>
+                <span className={ Styles.sprintNumber }>{ sprint.subtitle }</span>
+                <h1 className={ Styles.title }>{ sprint.title }</h1>
                 <div className={ Styles.progressBlock }>
                     <div className={ Styles.progressBar }>
                         <div className={ Styles.progress } style={ progressStyle }>
@@ -47,16 +58,13 @@ function Sprint() {
                 </div>
                 <div className={ Styles.quests }>
                     <div className={ Styles.items }>
-                        <p className={ className }>Прочитать  книгу Притчи за месяц</p>
-                        <p className={ Styles.item }>Учавствовать в викторине по книги Притчи</p>
-                        <p className={ Styles.item }>Получить пин “Bible Digger”</p>
+                        { spintReqs }
                     </div>
                     <span>глав 0 / 31</span>
                 </div>
             </div>
             <div className={ Styles.image }>
-                <GoodStart className={ Styles.goodStart }/>
-                <ThreeStars className={ Styles.threeStars }/>
+                <SprintImage className={ Styles.icon }/>
             </div>
         </section>
     );

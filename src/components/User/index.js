@@ -1,3 +1,3 @@
-export Pins from './Pins';
-export Info from './Info';
-export Sprint from './Sprint';
+export Pins from './Pins/tpl';
+export Info from './Info/tpl';
+export Sprint from './Sprint/tpl';
