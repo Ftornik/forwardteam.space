@@ -11,8 +11,8 @@ import cx from 'classnames';
  */
 import Styles from './Styles/main.scss';
 
-import GoodStart from 'components/Assets/GoodStart';
-import ThreeStars from 'components/Assets/ThreeStars';
+import GoodStart from 'components/Assets/Pins/GoodStart';
+import ThreeStars from 'components/Assets/Stars/Three';
 
 function Sprint() {
     const percent = 100;
@@ -55,7 +55,7 @@ function Sprint() {
                 </div>
             </div>
             <div className={ Styles.image }>
-                <GoodStart className={ Styles.goodStart }/>
+                <GoodStart className={ Styles.icon }/>
                 <ThreeStars className={ Styles.threeStars }/>
             </div>
         </section>

@@ -36,6 +36,11 @@
             height: px(283);
             margin-top: px(14);
 
+            .disabled {
+                filter: grayscale(100%);
+                opacity: .6;
+            }
+
             .threeStars {
                 width: px(140);
                 margin-top: px(-8);
@@ -46,7 +51,7 @@
                 margin-top: px(-8);
             }
 
-            .Star {
+            .oneStar {
                 width: px(50);
                 margin-top: px(-8);
             }
