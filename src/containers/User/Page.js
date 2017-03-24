@@ -18,6 +18,10 @@ class HomePage extends Component {
         const pins = PinApi.getAll();
         const sprint = SprintApi.getById('s1');
 
+        if (!user) {
+            return null;
+        }
+
         return (
             <div>
                 <Helmet { ...Meta() }/>

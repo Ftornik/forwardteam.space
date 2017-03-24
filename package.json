@@ -28,7 +28,7 @@
       "env": {
         "NODE_PATH": "./src",
         "NODE_ENV": "production",
-        "PORT": 8080
+        "PORT": 3000
       }
     },
     "start-dev": {
@@ -91,6 +91,7 @@
     "better-npm-run": "0.0.14",
     "body-parser": "^1.14.1",
     "classnames": "^2.2.3",
+    "clean-webpack-plugin": "^0.1.6",
     "css-loader": "^0.26.1",
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^1.0.1",
@@ -137,7 +138,6 @@
     "babel-eslint": "^7.1.1",
     "babel-plugin-react-transform": "^2.0.0",
     "babel-plugin-typecheck": "^3.6.0",
-    "clean-webpack-plugin": "^0.1.6",
     "concurrently": "^3.1.0",
     "eslint-config-hope": "^3.1.0",
     "eslint-loader": "^1.0.0",
