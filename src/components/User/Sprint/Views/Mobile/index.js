@@ -15,19 +15,27 @@ import SprintImage from 'components/Assets/Sprint';
 
 function Sprint(props) {
     const { user, sprint } = props;
-
     const sprintProgress = user.progress.sprints[sprint.id] ? user.progress.sprints[sprint.id] : null;
 
     const percent = sprintProgress.amount;
-    const maxPercent = 91;
+    const maxPercent = 94;
+    const maxRightOffset = 91;
+    const minPercent = 4;
 
     const progressStyle = {
         width: `${percent}%`
     };
 
     const percentStyle = {
-        left: percent > maxPercent ? `${maxPercent}%` : `${percent}%`
+        left: `${percent}%`,
+        transform: percent > minPercent && percent < maxPercent ? 'translateX(-54%)' : null
     };
+
+    if (percent >= maxPercent) {
+        percentStyle.left = `${maxRightOffset}%`;
+    } else if (percent <= minPercent) {
+        percentStyle.left = '0';
+    }
 
     const spintReqs = sprint.requirements.map((req) => {
         const reqDone = sprintProgress[req.id] ? sprintProgress[req.id] : false;
@@ -38,7 +46,12 @@ function Sprint(props) {
         });
 
         return (
-            <p className={ reqClass } key={ req.title }>{ req.title }</p>
+            <div className={ reqClass } key={ req.title }>
+                <p className={ Styles.text }>
+                    { req.title }
+                    <span className={ Styles.progress }>глав 0 / 31</span>
+                </p>
+            </div>
         );
     });
 
@@ -60,7 +73,6 @@ function Sprint(props) {
                     <div className={ Styles.items }>
                         { spintReqs }
                     </div>
-                    <span>глав 0 / 31</span>
                 </div>
             </div>
             <div className={ Styles.image }>

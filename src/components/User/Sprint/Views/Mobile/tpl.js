@@ -55,7 +55,7 @@ function Sprint() {
                 </div>
             </div>
             <div className={ Styles.image }>
-                <GoodStart className={ Styles.icon }/>
+                <GoodStart className={ Styles.goodStart }/>
                 <ThreeStars className={ Styles.threeStars }/>
             </div>
         </section>
