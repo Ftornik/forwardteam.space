@@ -1,0 +1,78 @@
+& {
+  display: flex;
+  width: px(1376);
+  height: px(384);
+  margin: px(40) auto 0;
+  border-radius: px(20);
+  overflow: hidden;
+
+  .info {
+    width: px(972);
+    padding-top: px(58);
+    padding-left: px(39);
+    background: $mainColor1;
+
+    .title {
+      color: $color6;
+      font-size: px(28);
+    }
+
+    .challenges {
+      margin-top: px(62);
+
+      p {
+        display: flex;
+        color: $color2;
+        font-size: px(32);
+      }
+
+      .active {
+        &::before {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          width: px(32);
+          height: px(32);
+          margin-right: px(22);
+          background: $color10;
+          font-size: px(22);
+          color: $mainColor1;
+          padding-top: px(4);
+          border-radius: 50%;
+          content: '\2713';
+        }
+      }
+
+      .item {
+        margin-bottom: px(30);
+
+        &::before {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          width: px(32);
+          height: px(32);
+          margin-right: px(22);
+          background: $color9;
+          border-radius: 50%;
+          content: '';
+        }
+      }
+    }
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: px(404);
+    background: $color11;
+
+    .icon {
+      width: px(240);
+    }
+  }
+}
