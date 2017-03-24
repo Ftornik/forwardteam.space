@@ -24,6 +24,7 @@ class HomePage extends Component {
                 <Shared.Header/>
                 <User.Info user={ user }/>
                 <User.Sprint user={ user } sprint={ sprint }/>
+                <User.Question/>
                 <User.Pins user={ user } pins={ pins }/>
             </div>
         );

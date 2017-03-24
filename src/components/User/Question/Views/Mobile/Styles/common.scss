@@ -1,0 +1,59 @@
+& {
+  display: flex;
+  width: px(1376);
+  height: px(384);
+  margin: px(40) auto 0;
+  border-radius: px(20);
+  overflow: hidden;
+
+  .info {
+    width: px(972);
+    padding-top: px(58);
+    padding-left: px(39);
+    background: $mainColor1;
+
+    .title {
+      color: $color6;
+      font-size: px(28);
+    }
+
+    .question {
+      margin-top: px(32);
+      color: $color2;
+      font-size: px(42);
+      font-weight: bold;
+    }
+
+    .answer {
+      display: flex;
+      width: px(830);
+      margin-top: px(40);
+
+      .label {
+        margin-top: px(8);
+        margin-right: px(19);
+        font-size: px(28);
+        color: $color6;
+        letter-spacing: 2px;
+      }
+
+      .text {
+        font-size: px(30);
+        line-height: px(46);
+      }
+    }
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: px(404);
+    background: $color11;
+
+    .icon {
+      width: px(320);
+    }
+  }
+}
