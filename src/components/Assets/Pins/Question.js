@@ -5,7 +5,7 @@ import svg from 'lib/svg';
     width: 600,
     height: 524
 })
-export default class Sprint extends Component {
+export default class Question extends Component {
     render = () => {
         const st3Style = {
             opacity: '0.1'

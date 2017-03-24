@@ -25,6 +25,7 @@ class HomePage extends Component {
                 <User.Info user={ user }/>
                 <User.Sprint user={ user } sprint={ sprint }/>
                 <User.Question/>
+                <User.Challenge/>
                 <User.Pins user={ user } pins={ pins }/>
             </div>
         );
