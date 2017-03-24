@@ -12,7 +12,7 @@ import cx from 'classnames';
 import Styles from './Styles/main.scss';
 
 import GoodStart from 'components/Assets/Pins/GoodStart';
-import ThreeStars from 'components/Assets/Pins/ThreeStars';
+import ThreeStars from 'components/Assets/Stars/Three';
 
 function Sprint() {
     const percent = 100;

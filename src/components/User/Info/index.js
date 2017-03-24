@@ -3,7 +3,6 @@
  * Library Import
  */
 import React, { PropTypes, Component } from 'react';
-import { connect } from 'react-redux';
 
 /**
  * [IV]
@@ -11,22 +10,13 @@ import { connect } from 'react-redux';
  */
 import Mobile from './Views/Mobile';
 
-/**
- * [IRDX]
- * Redux connect (optional)
- */
-@connect((state) => {
-    return {
-        mediaType: state.browser.mediaType
-    };
-})
 class Info extends Component {
     /**
      * [CPT]
      * Component prop types
      */
     static propTypes = {
-        mediaType: PropTypes.string.isRequired
+        user: PropTypes.object.isRequired
     };
 
     /**
@@ -38,10 +28,10 @@ class Info extends Component {
          * [RPD]
          * Props destructuring
          */
-        const { mediaType } = this.props;
+        const { user } = this.props;
 
         const view = (
-            <Mobile mediaType={ mediaType } gender={ 'female' }/>
+            <Mobile user={ user }/>
         );
 
         /**

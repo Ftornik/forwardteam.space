@@ -14,23 +14,23 @@ import Male from 'components/Assets/Male';
 import Female from 'components/Assets/Female';
 
 function Info(props) {
-    const { gender } = props;
+    const { user } = props;
     const progressStyle = {
         width: '30%'
     };
 
-    const avatar = gender === 'female' ? <Female className={ Styles.female }/> : <Male className={ Styles.male }/>;
+    const avatar = user.gender === 'female' ? <Female className={ Styles.female }/> : <Male className={ Styles.male }/>;
 
     return (
         <section className={ Styles.infoComponent }>
             <div className={ Styles.content }>
                 <div className={ Styles.image }>{ avatar }</div>
                 <div className={ Styles.information }>
-                    <span className={ Styles.name }>Эмма Садовая</span>
+                    <span className={ Styles.name }>{ `${user.firstName} ${user.lastName}` }</span>
                     <div className={ Styles.progressBlock }>
                         <div className={ Styles.statusNames }>
                             <span className={ Styles.name }>Junior</span>
-                            <span className={ Styles.name }>Mentor</span>
+                            <span className={ Styles.name }>Senior</span>
                         </div>
                         <div className={ Styles.progressBar }>
                             <div className={ Styles.progress } style={ progressStyle }/>
@@ -43,7 +43,7 @@ function Info(props) {
 }
 
 Info.propTypes = {
-    gender: PropTypes.string.isRequired
+    user: PropTypes.object.isRequired
 };
 
 /**

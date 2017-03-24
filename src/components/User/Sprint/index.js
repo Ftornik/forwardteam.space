@@ -11,37 +11,14 @@ import { connect } from 'react-redux';
  */
 import Mobile from './Views/Mobile';
 
-/**
- * [IRDX]
- * Redux connect (optional)
- */
-@connect((state) => {
-    return {
-        mediaType: state.browser.mediaType
-    };
-})
 class Sprint extends Component {
-    /**
-     * [CPT]
-     * Component prop types
-     */
-    static propTypes = {
-        mediaType: PropTypes.string.isRequired
-    };
-
     /**
      * [CR]
      * Render function
      */
     render() {
-        /**
-         * [RPD]
-         * Props destructuring
-         */
-        const { mediaType } = this.props;
-
         const view = (
-            <Mobile mediaType={ mediaType } gender={ 'female' }/>
+            <Mobile { ...this.props }/>
         );
 
         /**

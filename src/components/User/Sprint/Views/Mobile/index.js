@@ -11,11 +11,13 @@ import cx from 'classnames';
  */
 import Styles from './Styles/main.scss';
 
-import GoodStart from 'components/Assets/Pins/GoodStart';
-import ThreeStars from 'components/Assets/ThreeStars';
+import SprintImage from 'components/Assets/Sprint';
 
-function Sprint() {
-    const percent = 0;
+function Sprint(props) {
+    const { user, sprint } = props;
+    const sprintProgress = user.progress.sprints[sprint.id] ? user.progress.sprints[sprint.id] : null;
+
+    const percent = sprintProgress.amount;
     const maxPercent = 94;
     const maxRightOffset = 91;
     const minPercent = 4;
@@ -35,16 +37,29 @@ function Sprint() {
         percentStyle.left = '0';
     }
 
-    const className = cx({
-        [Styles.item]: true,
-        [Styles.active]: true
+    const spintReqs = sprint.requirements.map((req) => {
+        const reqDone = sprintProgress[req.id] ? sprintProgress[req.id] : false;
+
+        const reqClass = cx({
+            [Styles.item]: true,
+            [Styles.active]: reqDone
+        });
+
+        return (
+            <div className={ reqClass } key={ req.title }>
+                <p className={ Styles.text }>
+                    { req.title }
+                    <span className={ Styles.progress }>глав 0 / 31</span>
+                </p>
+            </div>
+        );
     });
 
     return (
         <section className={ Styles.sprintComponent }>
             <div className={ Styles.info }>
-                <span className={ Styles.sprintNumber }>Спринт #1</span>
-                <h1 className={ Styles.title }>Личностный рост</h1>
+                <span className={ Styles.sprintNumber }>{ sprint.subtitle }</span>
+                <h1 className={ Styles.title }>{ sprint.title }</h1>
                 <div className={ Styles.progressBlock }>
                     <div className={ Styles.progressBar }>
                         <div className={ Styles.progress } style={ progressStyle }>
@@ -56,28 +71,12 @@ function Sprint() {
                 </div>
                 <div className={ Styles.quests }>
                     <div className={ Styles.items }>
-                        <div className={ className }>
-                            <p className={ Styles.text }>
-                                Прочитать книгу Притчи за месяц
-                                <span className={ Styles.progress }>глав 0 / 31</span>
-                            </p>
-                        </div>
-                        <div className={ Styles.item }>
-                            <p className={ Styles.text }>
-                                Учавствовать в викторине по книги Притчи
-                            </p>
-                        </div>
-                        <div className={ Styles.item }>
-                            <p className={ Styles.text }>
-                                Получить пин “Bible Digger”
-                            </p>
-                        </div>
+                        { spintReqs }
                     </div>
                 </div>
             </div>
             <div className={ Styles.image }>
-                <GoodStart className={ Styles.goodStart }/>
-                <ThreeStars className={ Styles.threeStars }/>
+                <SprintImage className={ Styles.icon }/>
             </div>
         </section>
     );

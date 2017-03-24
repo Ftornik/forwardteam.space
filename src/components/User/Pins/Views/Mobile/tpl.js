@@ -11,10 +11,10 @@ import React from 'react';
 import Styles from './Styles/main.scss';
 
 import GoodStart from 'components/Assets/Pins/GoodStart';
-import Sprint from 'components/Assets/Pins/Sprint';
-import ThreeStars from 'components/Assets/ThreeStars';
-import TwoStars from 'components/Assets/TwoStars';
-import Star from 'components/Assets/Star';
+import Sprint from 'components/Assets/Sprint';
+import ThreeStars from 'components/Assets/Stars/Three';
+import TwoStars from 'components/Assets/Stars/Two';
+import Star from 'components/Assets/Stars/One';
 
 function Pins() {
     return (
