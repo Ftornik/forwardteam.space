@@ -12,7 +12,9 @@ import Styles from './Styles/main.scss';
 
 function Header() {
     return (
-        <section className={ Styles.headerComponent }/>
+        <section className={ Styles.headerComponent }>
+            <div className={ Styles.logo }>ForwardTeam</div>
+        </section>
     );
 }
 
