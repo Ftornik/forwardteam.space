@@ -1,0 +1,17 @@
+{
+  "id": "Byus0z73x",
+  "firstName": "Настя",
+  "lastName": "Макаревич",
+  "gender": "female",
+  "level": "junior",
+  "progress": {
+    "amount": 10,
+    "sprints": {
+      "s1": {
+        "amount": 6,
+        "t1": 2
+      }
+    },
+    "pins": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "H1LUCZm3e",
+  "firstName": "Даник",
+  "lastName": "Тихоновский",
+  "gender": "male",
+  "level": "junior",
+  "progress": {
+    "amount": 10,
+    "sprints": {
+      "s1": {
+        "amount": 40,
+        "t1": 5,
+        "t2": 5,
+        "t4": true
+      }
+    },
+    "pins": {
+      "GoodStart": {
+        "level": 0
+      },
+      "Challenger": {
+        "level": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "BkXeJX7hl",
+  "firstName": "Вика",
+  "lastName": "Шабранская",
+  "gender": "female",
+  "level": "junior",
+  "progress": {
+    "amount": 10,
+    "sprints": {
+      "s1": {
+        "amount": 9,
+        "t1": 3
+      }
+    },
+    "pins": {}
+  }
+}

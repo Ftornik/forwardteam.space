@@ -1,0 +1,25 @@
+{
+  "id": "r1ni3Mmnx",
+  "firstName": "Богдан",
+  "lastName": "Боровой",
+  "gender": "male",
+  "level": "junior",
+  "progress": {
+    "amount": 10,
+    "sprints": {
+      "s1": {
+        "amount": 15,
+        "t1": 5,
+        "t2": 2
+      }
+    },
+    "pins": {
+      "BibleDigger": {
+        "level": 0
+      },
+      "Challenger": {
+        "level": 0
+      }
+    }
+  }
+}

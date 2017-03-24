@@ -1,0 +1,17 @@
+{
+  "id": "S1K7Czmhl",
+  "firstName": "Настя",
+  "lastName": "Двораковская",
+  "gender": "female",
+  "level": "junior",
+  "progress": {
+    "amount": 10,
+    "sprints": {
+      "s1": {
+        "amount": 6,
+        "t1": 2
+      }
+    },
+    "pins": {}
+  }
+}

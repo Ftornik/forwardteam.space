@@ -1,0 +1,17 @@
+{
+  "id": "BkVeAGQhe",
+  "firstName": "Назар",
+  "lastName": "Гордеев",
+  "gender": "male",
+  "level": "junior",
+  "progress": {
+    "amount": 10,
+    "sprints": {
+      "s1": {
+        "amount": 9,
+        "t1": 3
+      }
+    },
+    "pins": {}
+  }
+}
