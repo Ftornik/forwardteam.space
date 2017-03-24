@@ -1,0 +1,17 @@
+{
+  "id": "ryk71Q7nx",
+  "firstName": "Лиза",
+  "lastName": "Вакулова",
+  "gender": "female",
+  "level": "junior",
+  "progress": {
+    "amount": 10,
+    "sprints": {
+      "s1": {
+        "amount": 15,
+        "t1": 5
+      }
+    },
+    "pins": {}
+  }
+}

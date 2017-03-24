@@ -1,0 +1,28 @@
+{
+  "id": "SyxwJ7mhe",
+  "firstName": "Маша",
+  "lastName": "Боровая",
+  "gender": "female",
+  "level": "junior",
+  "progress": {
+    "amount": 10,
+    "sprints": {
+      "s1": {
+        "amount": 40,
+        "t1": 5,
+        "t2": 3
+      }
+    },
+    "pins": {
+      "BibleDigger": {
+        "level": 0
+      },
+      "Challenger": {
+        "level": 0
+      },
+      "GoodStart": {
+        "level": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "BJeBTzm3x",
+  "firstName": "Вадим",
+  "lastName": "Стасюк",
+  "gender": "male",
+  "level": "junior",
+  "progress": {
+    "amount": 10,
+    "sprints": {
+      "s1": {
+        "amount": 15,
+        "t1": 5
+      }
+    },
+    "pins": {}
+  }
+}

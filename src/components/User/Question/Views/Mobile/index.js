@@ -20,13 +20,12 @@ function Question() {
                     <span className={ Styles.questionMonth }>Вопрос месяца</span>&nbsp;
                     <span className={ Styles.month }>(март)</span>
                 </div>
-                <p className={ Styles.question }>Какой тип темперамента был у Иисуса?</p>
+                <p className={ Styles.question }>Иисус утверждал (Матф. 15:4) или отменял (Матф. 10:37, Лука 14:26)
+                    пятую заповедь?</p>
                 <div className={ Styles.answer }>
                     <span className={ Styles.label }>Ответ:</span>
                     <p className={ Styles.text }>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
+                        Ищите в Библии и <a href="https://goo.gl/forms/yJhzbWSTWPxRYnss2">отправляйте сюда</a>
                     </p>
                 </div>
             </div>

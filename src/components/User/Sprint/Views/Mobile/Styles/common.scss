@@ -1,7 +1,6 @@
 & {
   display: flex;
   width: px(1376);
-  height: px(496);
   margin: px(40) auto 0;
   border-radius: px(20);
   overflow: hidden;
@@ -10,6 +9,7 @@
     width: px(972);
     padding-top: px(58);
     padding-left: px(39);
+    padding-bottom: px(30);
     background: $mainColor1;
 
     .sprintNumber {

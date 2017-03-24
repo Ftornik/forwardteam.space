@@ -1,0 +1,25 @@
+{
+  "id": "BkVo0Wmnx",
+  "firstName": "Рома",
+  "lastName": "Шабанов",
+  "gender": "male",
+  "level": "junior",
+  "progress": {
+    "amount": 10,
+    "sprints": {
+      "s1": {
+        "amount": 9,
+        "t1": 3,
+        "t2": 3
+      }
+    },
+    "pins": {
+      "BibleDigger": {
+        "level": 0
+      },
+      "Challenger": {
+        "level": 0
+      }
+    }
+  }
+}

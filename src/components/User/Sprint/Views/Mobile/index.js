@@ -38,18 +38,31 @@ function Sprint(props) {
     }
 
     const spintReqs = sprint.requirements.map((req) => {
-        const reqDone = sprintProgress[req.id] ? sprintProgress[req.id] : false;
+        let reqDone = false;
+        let reqCount = 0;
+        if (sprintProgress[req.id]) {
+            if (req.count) {
+                reqCount = sprintProgress[req.id];
+                reqDone = req.count.total === sprintProgress[req.id];
+            } else {
+                reqDone = true;
+            }
+        }
 
         const reqClass = cx({
             [Styles.item]: true,
             [Styles.active]: reqDone
         });
 
+        const progress = req.count ? (
+            <span className={ Styles.progress }>{ req.count.title } { reqCount } / { req.count.total }</span>
+        ) : null;
+
         return (
             <div className={ reqClass } key={ req.title }>
                 <p className={ Styles.text }>
                     { req.title }
-                    <span className={ Styles.progress }>глав 0 / 31</span>
+                    { progress }
                 </p>
             </div>
         );

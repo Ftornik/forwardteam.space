@@ -16,7 +16,7 @@ import Female from 'components/Assets/Female';
 function Info(props) {
     const { user } = props;
     const progressStyle = {
-        width: '30%'
+        width: `${user.progress.amount}%`
     };
 
     const avatar = user.gender === 'female' ? <Female className={ Styles.female }/> : <Male className={ Styles.male }/>;
