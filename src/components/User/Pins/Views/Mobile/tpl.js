@@ -11,7 +11,7 @@ import React from 'react';
 import Styles from './Styles/main.scss';
 
 import GoodStart from 'components/Assets/Pins/GoodStart';
-import Sprint from 'components/Assets/Sprint';
+import Sprint from 'components/Assets/Pins/Sprint';
 import ThreeStars from 'components/Assets/Stars/Three';
 import TwoStars from 'components/Assets/Stars/Two';
 import Star from 'components/Assets/Stars/One';

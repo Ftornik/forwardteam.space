@@ -1,4 +1,15 @@
- & {
+& {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    color: red;
+    height: px(120);
+    background-color: $color1;
+
+    .logo {
+        width: px(322);
+        color: $mainColor1;  //delete
+        font-size: px(50);   //delete
+        text-align: center;  //delete
+    }
 }

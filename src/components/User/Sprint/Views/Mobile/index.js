@@ -11,7 +11,7 @@ import cx from 'classnames';
  */
 import Styles from './Styles/main.scss';
 
-import SprintImage from 'components/Assets/Sprint';
+import SprintImage from 'components/Assets/Pins/Sprint';
 
 function Sprint(props) {
     const { user, sprint } = props;
