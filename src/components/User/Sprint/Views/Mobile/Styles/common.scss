@@ -80,8 +80,6 @@ body {
     }
 
     .quests {
-      display: flex;
-      justify-content: space-between;
       margin-top: px(39);
       width: px(892);
 
@@ -89,8 +87,6 @@ body {
         .item {
           display: flex;
           margin-bottom: px(30);
-          color: $color2;
-          font-size: px(32);
 
           &::before {
             display: flex;
@@ -102,6 +98,19 @@ body {
             background: $color9;
             border-radius: 50%;
             content: '';
+          }
+
+          .text {
+            color: $color2;
+            font-size: px(32);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .progress {
+              color: $color4;
+              font-size: px(32);
+            }
           }
         }
 
@@ -121,11 +130,6 @@ body {
             content: '\2713';
           }
         }
-      }
-
-      span {
-        margin-top: px(10);
-        font-size: px(32);
       }
     }
   }

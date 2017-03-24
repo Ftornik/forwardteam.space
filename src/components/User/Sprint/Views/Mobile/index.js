@@ -11,20 +11,29 @@ import cx from 'classnames';
  */
 import Styles from './Styles/main.scss';
 
-import GoodStart from 'components/Assets/GoodStart';
+import GoodStart from 'components/Assets/Pins/GoodStart';
 import ThreeStars from 'components/Assets/ThreeStars';
 
 function Sprint() {
-    const percent = 100;
-    const maxPercent = 91;
+    const percent = 0;
+    const maxPercent = 94;
+    const maxRightOffset = 91;
+    const minPercent = 4;
 
     const progressStyle = {
         width: `${percent}%`
     };
 
     const percentStyle = {
-        left: percent > maxPercent ? `${maxPercent}%` : `${percent}%`
+        left: `${percent}%`,
+        transform: percent > minPercent && percent < maxPercent ? 'translateX(-54%)' : null
     };
+
+    if (percent >= maxPercent) {
+        percentStyle.left = `${maxRightOffset}%`;
+    } else if (percent <= minPercent) {
+        percentStyle.left = '0';
+    }
 
     const className = cx({
         [Styles.item]: true,
@@ -47,11 +56,23 @@ function Sprint() {
                 </div>
                 <div className={ Styles.quests }>
                     <div className={ Styles.items }>
-                        <p className={ className }>Прочитать  книгу Притчи за месяц</p>
-                        <p className={ Styles.item }>Учавствовать в викторине по книги Притчи</p>
-                        <p className={ Styles.item }>Получить пин “Bible Digger”</p>
+                        <div className={ className }>
+                            <p className={ Styles.text }>
+                                Прочитать книгу Притчи за месяц
+                                <span className={ Styles.progress }>глав 0 / 31</span>
+                            </p>
+                        </div>
+                        <div className={ Styles.item }>
+                            <p className={ Styles.text }>
+                                Учавствовать в викторине по книги Притчи
+                            </p>
+                        </div>
+                        <div className={ Styles.item }>
+                            <p className={ Styles.text }>
+                                Получить пин “Bible Digger”
+                            </p>
+                        </div>
                     </div>
-                    <span>глав 0 / 31</span>
                 </div>
             </div>
             <div className={ Styles.image }>
