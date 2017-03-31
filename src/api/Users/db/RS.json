@@ -8,16 +8,23 @@
     "amount": 10,
     "sprints": {
       "s1": {
-        "amount": 9,
-        "t1": 3,
-        "t2": 3
+        "amount": 15,
+        "t1": 5,
+        "t2": 4,
+        "t3": 1
       }
     },
     "pins": {
       "BibleDigger": {
         "level": 0
       },
+      "BookWormEGW": {
+        "level": 0
+      },
       "Challenger": {
+        "level": 0
+      },
+      "SocialConnector": {
         "level": 0
       }
     }

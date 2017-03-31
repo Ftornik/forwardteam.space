@@ -18,14 +18,14 @@ function Question() {
             <div className={ Styles.info }>
                 <div className={ Styles.title }>
                     <span className={ Styles.questionMonth }>Вопрос месяца</span>&nbsp;
-                    <span className={ Styles.month }>(март)</span>
+                    <span className={ Styles.month }>(апрель)</span>
                 </div>
-                <p className={ Styles.question }>Иисус утверждал (Матф. 15:4) или отменял (Матф. 10:37, Лука 14:26)
-                    пятую заповедь?</p>
+                <p className={ Styles.question }>
+                    Кто является причиной природных катаклизмов: Бог, дьявол, человек?
+                </p>
                 <div className={ Styles.answer }>
-                    <span className={ Styles.label }>Ответ:</span>
                     <p className={ Styles.text }>
-                        Ищите в Библии и <a href="https://goo.gl/forms/yJhzbWSTWPxRYnss2">отправляйте сюда</a>
+                        Дай ответ на основании Библии и Духа пророчества
                     </p>
                 </div>
             </div>

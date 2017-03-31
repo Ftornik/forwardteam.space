@@ -1,7 +1,6 @@
 & {
   display: flex;
   width: px(1376);
-  height: px(384);
   margin: px(40) auto 0;
   border-radius: px(20);
   overflow: hidden;
@@ -46,6 +45,7 @@
 
       .item {
         margin-bottom: px(30);
+        margin-right: px(50);
 
         &::before {
           display: flex;
@@ -58,6 +58,16 @@
           background: $color9;
           border-radius: 50%;
           content: '';
+        }
+      }
+
+      .submit {
+        display: block;
+        margin-left: px(54);
+        margin-bottom: px(30);
+
+        a {
+          color: #ff5959;
         }
       }
     }
