@@ -11,3 +11,4 @@ export VSh from './VSh.json';
 export LV from './LV.json';
 export MB from './MB.json';
 export TS from './TS.json';
+export TEST from './TEST.json';

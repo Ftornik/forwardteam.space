@@ -1,0 +1,39 @@
+{
+  "id": "SylLUzKag",
+  "firstName": "Эмма",
+  "lastName": "Садовая",
+  "gender": "female",
+  "level": "junior",
+  "progress": {
+    "amount": 10,
+    "sprints": {
+      "s1": {
+        "amount": 44,
+        "t1": 7,
+        "t2": 6,
+        "t3": 1,
+        "t4": true
+      }
+    },
+    "pins": {
+      "GoodStart": {
+        "level": 0
+      },
+      "Challenger": {
+        "level": 1
+      },
+      "BookWorm": {
+        "level": 0
+      },
+      "BookWormEGW": {
+        "level": 0
+      },
+      "BibleDigger": {
+        "level": 2
+      },
+      "SocialConnector": {
+        "level": 3
+      }
+    }
+  }
+}
