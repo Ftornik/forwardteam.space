@@ -32,7 +32,7 @@ class HomePage extends Component {
                 <Shared.Header/>
                 <User.Info user={ user }/>
                 <User.Sprint user={ user } sprint={ sprint }/>
-                <User.Question/>
+                { user.team === 'kiev' ? <User.Question/> : null }
                 <User.Challenge user={ user } challenges={ challenges } />
                 <User.Pins user={ user } pins={ pins }/>
             </div>

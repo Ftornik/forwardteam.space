@@ -8,3 +8,5 @@ export GoodStart from './GoodStart.json';
 export Challenger from './Challenger.json';
 export SocialConnector from './SocialConnector.json';
 export PlannerB from './PlannerB.json';
+export TrueTime from './TrueTime.json';
+export IronPray from './IronPray.json';
