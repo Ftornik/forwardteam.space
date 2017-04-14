@@ -20,7 +20,9 @@
     "start-dev": "better-npm-run start-dev",
     "watch-client": "better-npm-run watch-client",
     "dev": "concurrently --kill-others \"npm run watch-client\" \"npm run start-dev\"",
-    "palette": "NODE_ENV=development NODE_PATH=./src node -r babel-register ./bin/palette.js"
+    "palette": "NODE_ENV=development NODE_PATH=./src node -r babel-register ./bin/palette.js",
+    "users:gen": "NODE_ENV=development NODE_PATH=./src node -r babel-register ./bin/users-gen.js",
+    "users:links": "NODE_ENV=development NODE_PATH=./src node -r babel-register ./bin/users-links.js"
   },
   "betterScripts": {
     "start-prod": {
@@ -96,6 +98,7 @@
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
+    "fs-extra-promise": "^1.0.1",
     "isomorphic-fetch": "^2.2.1",
     "json-loader": "^0.5.4",
     "lru-memoize": "^1.0.0",
@@ -126,6 +129,7 @@
     "sass-loader": "^4.1.1",
     "scroll-behavior": "^0.3.4",
     "serialize-javascript": "^1.1.2",
+    "shortid": "^2.2.8",
     "string": "^3.3.1",
     "strip-loader": "^0.1.0",
     "style-loader": "^0.13.1",

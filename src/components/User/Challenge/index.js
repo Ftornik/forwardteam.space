@@ -12,6 +12,18 @@ import Mobile from './Views/Mobile';
 
 class Challenge extends Component {
     /**
+     * [CPT]
+     * Component prop types
+     */
+    static propTypes = {
+        user: PropTypes.object.isRequired,
+        challenges: PropTypes.array
+    };
+    static defaultProps = {
+        challenges: []
+    };
+
+    /**
      * [CR]
      * Render function
      */

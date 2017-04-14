@@ -1,0 +1,37 @@
+{
+  "id": "r1Xe0ms-Cpx",
+  "firstName": "Богдан",
+  "lastName": "Зубок",
+  "gender": "male",
+  "level": "junior",
+  "team": "chernigov",
+  "progress": {
+    "amount": 0,
+    "sprints": {
+      "s1": {
+        "amount": 0,
+        "t1": 0,
+        "t2": 0,
+        "t3": 0
+      }
+    },
+    "challenges": [
+      {
+        "id": "init-1",
+        "done": false,
+        "visible": true
+      },
+      {
+        "id": "init-2",
+        "done": false,
+        "visible": false
+      },
+      {
+        "id": "init-3",
+        "done": false,
+        "visible": false
+      }
+    ],
+    "pins": {}
+  }
+}

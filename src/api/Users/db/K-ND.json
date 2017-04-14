@@ -4,6 +4,7 @@
   "lastName": "Двораковская",
   "gender": "female",
   "level": "junior",
+  "team": "kiev",
   "progress": {
     "amount": 10,
     "sprints": {

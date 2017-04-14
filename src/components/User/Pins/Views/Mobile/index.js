@@ -14,13 +14,19 @@ import Styles from './Styles/main.scss';
 import * as PinImages from 'components/Assets/Pins';
 import * as Stars from 'components/Assets/Stars';
 
+const onClick = (url) => () => {
+    if (url) {
+        location.href = url;
+    }
+};
+
 function Pins(props) {
     const { user, pins } = props;
 
     const cPins = pins.map((pin) => {
-        const Pin = PinImages[pin.id];
+        let Pin = PinImages[pin.id];
         if (!Pin) {
-            return null;
+            Pin = PinImages.ComingSoon;
         }
 
         const level = user.progress.pins[pin.id] ? parseInt(user.progress.pins[pin.id].level, 10) : -1;
@@ -44,7 +50,7 @@ function Pins(props) {
         }
 
         return (
-            <div className={ Styles.pinItem } key={ pin.id }>
+            <div className={ Styles.pinItem } key={ pin.id } onClick={ onClick(pin.url ? pin.url[user.team] : null) }>
                 <h3 className={ Styles.pinName }>{ pin.title }</h3>
                 <div className={ Styles.icons }>
                     <Pin className={ pinClass }/>

@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import UserApi from 'api/Users';
 import PinApi from 'api/Pins';
 import SprintApi from 'api/Sprints';
+import ChallengeApi from 'api/Challenges';
 
 import Meta from './Meta';
 import * as Shared from 'components/Shared';
@@ -17,6 +18,9 @@ class HomePage extends Component {
         const user = UserApi.getById(userId);
         const pins = PinApi.getAll();
         const sprint = SprintApi.getById('s1');
+        const challenges = user.progress.challenges ? user.progress.challenges.map((challenge) => {
+            return ChallengeApi.getById(challenge.id);
+        }) : [];
 
         if (!user) {
             return null;
@@ -29,7 +33,7 @@ class HomePage extends Component {
                 <User.Info user={ user }/>
                 <User.Sprint user={ user } sprint={ sprint }/>
                 <User.Question/>
-                <User.Challenge/>
+                <User.Challenge user={ user } challenges={ challenges } />
                 <User.Pins user={ user } pins={ pins }/>
             </div>
         );

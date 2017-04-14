@@ -1,9 +1,10 @@
 {
-  "id": "BkXeJX7hl",
-  "firstName": "Вика",
-  "lastName": "Шабранская",
-  "gender": "female",
+  "id": "BkVeAGQhe",
+  "firstName": "Назар",
+  "lastName": "Гордеев",
+  "gender": "male",
   "level": "junior",
+  "team": "kiev",
   "progress": {
     "amount": 10,
     "sprints": {

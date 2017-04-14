@@ -1,9 +1,10 @@
 {
-  "id": "BJeBTzm3x",
-  "firstName": "Вадим",
-  "lastName": "Стасюк",
+  "id": "H1G26z73l",
+  "firstName": "Илья",
+  "lastName": "Киселев",
   "gender": "male",
   "level": "junior",
+  "team": "kiev",
   "progress": {
     "amount": 10,
     "sprints": {

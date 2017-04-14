@@ -1,9 +1,10 @@
 {
-  "id": "H1G26z73l",
-  "firstName": "Илья",
-  "lastName": "Киселев",
-  "gender": "male",
+  "id": "ryk71Q7nx",
+  "firstName": "Лиза",
+  "lastName": "Вакулова",
+  "gender": "female",
   "level": "junior",
+  "team": "kiev",
   "progress": {
     "amount": 10,
     "sprints": {

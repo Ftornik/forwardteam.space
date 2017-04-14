@@ -7,3 +7,4 @@ export BookWorm from './BookWorm';
 export BookWormEGW from './BookWormEGW';
 export Challenger from './Challenger';
 export SocialConnector from './SocialConnector';
+export ComingSoon from './ComingSoon';

@@ -4,6 +4,7 @@
   "lastName": "Садовая",
   "gender": "female",
   "level": "junior",
+  "team": "test",
   "progress": {
     "amount": 10,
     "sprints": {

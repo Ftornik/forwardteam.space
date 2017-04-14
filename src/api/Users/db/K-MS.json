@@ -1,9 +1,10 @@
 {
-  "id": "Byus0z73x",
-  "firstName": "Настя",
-  "lastName": "Макаревич",
-  "gender": "female",
+  "id": "S1K7Czmhl",
+  "firstName": "Марк",
+  "lastName": "Самоденко",
+  "gender": "male",
   "level": "junior",
+  "team": "kiev",
   "progress": {
     "amount": 10,
     "sprints": {

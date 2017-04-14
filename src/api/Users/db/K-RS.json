@@ -1,21 +1,25 @@
 {
-  "id": "r1ni3Mmnx",
-  "firstName": "Богдан",
-  "lastName": "Боровой",
+  "id": "BkVo0Wmnx",
+  "firstName": "Рома",
+  "lastName": "Шабанов",
   "gender": "male",
   "level": "junior",
+  "team": "kiev",
   "progress": {
     "amount": 10,
     "sprints": {
       "s1": {
-        "amount": 16,
-        "t1": 7,
-        "t2": 2,
+        "amount": 15,
+        "t1": 5,
+        "t2": 4,
         "t3": 1
       }
     },
     "pins": {
       "BibleDigger": {
+        "level": 0
+      },
+      "BookWormEGW": {
         "level": 0
       },
       "Challenger": {

@@ -7,3 +7,4 @@ export BookWormEGW from './BookWormEGW.json';
 export GoodStart from './GoodStart.json';
 export Challenger from './Challenger.json';
 export SocialConnector from './SocialConnector.json';
+export PlannerB from './PlannerB.json';
