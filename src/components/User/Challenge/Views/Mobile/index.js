@@ -18,7 +18,7 @@ function Challenge(props) {
 
     const reqClass = cx({
         [Styles.item]: true,
-        [Styles.active]: true
+        [Styles.active]: false
     });
 
     const defaultChallenges$ = [
@@ -54,8 +54,13 @@ function Challenge(props) {
             return null;
         }
 
+        const challengeClass = cx({
+            [Styles.item]: true,
+            [Styles.active]: challenge.done
+        });
+
         return (
-            <p className={ reqClass } dangerouslySetInnerHTML={{ __html: ch.text }} key={ ch.id } />
+            <p className={ challengeClass } dangerouslySetInnerHTML={{ __html: ch.text }} key={ ch.id } />
         );
     }) : [];
 

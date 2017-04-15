@@ -6,10 +6,10 @@
   "level": "junior",
   "team": "chernigov",
   "progress": {
-    "amount": 0,
+    "amount": 7,
     "sprints": {
       "s1": {
-        "amount": 0,
+        "amount": 4,
         "t1": 1,
         "t2": 1,
         "t3": 0
@@ -33,13 +33,11 @@
       }
     ],
     "pins": {
-      "pins": {
-        "Challenger": {
-          "level": 0
-        },
-        "SocialConnector": {
-          "level": 0
-        }
+      "Challenger": {
+        "level": 0
+      },
+      "SocialConnector": {
+        "level": 0
       }
     }
   }

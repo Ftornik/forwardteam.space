@@ -25,24 +25,6 @@
         font-size: px(32);
       }
 
-      .active {
-        &::before {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-shrink: 0;
-          width: px(32);
-          height: px(32);
-          margin-right: px(22);
-          background: $color10;
-          font-size: px(22);
-          color: $mainColor1;
-          padding-top: px(4);
-          border-radius: 50%;
-          content: '\2713';
-        }
-      }
-
       .item {
         margin-bottom: px(30);
         margin-right: px(50);
@@ -58,6 +40,24 @@
           background: $color9;
           border-radius: 50%;
           content: '';
+        }
+      }
+
+      .active {
+        &::before {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          width: px(32);
+          height: px(32);
+          margin-right: px(22);
+          background: $color10;
+          font-size: px(22);
+          color: $mainColor1;
+          padding-top: px(4);
+          border-radius: 50%;
+          content: '\2713';
         }
       }
 
