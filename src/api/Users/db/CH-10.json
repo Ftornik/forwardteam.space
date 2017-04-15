@@ -11,20 +11,20 @@
       "s1": {
         "amount": 0,
         "t1": 0,
-        "t2": 0,
+        "t2": 1,
         "t3": 0
       }
     },
     "challenges": [
       {
         "id": "init-1",
-        "done": false,
+        "done": true,
         "visible": true
       },
       {
         "id": "init-2",
         "done": false,
-        "visible": false
+        "visible": true
       },
       {
         "id": "init-3",
@@ -32,6 +32,15 @@
         "visible": false
       }
     ],
-    "pins": {}
+    "pins": {
+      "pins": {
+        "Challenger": {
+          "level": 0
+        },
+        "SocialConnector": {
+          "level": 0
+        }
+      }
+    }
   }
 }
