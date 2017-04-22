@@ -6,11 +6,11 @@
   "level": "junior",
   "team": "kiev",
   "progress": {
-    "amount": 10,
+    "amount": 9,
     "sprints": {
       "s1": {
-        "amount": 15,
-        "t1": 5
+        "amount": 18,
+        "t1": 6
       }
     },
     "pins": {}

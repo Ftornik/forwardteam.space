@@ -6,12 +6,12 @@
   "level": "junior",
   "team": "kiev",
   "progress": {
-    "amount": 10,
+    "amount": 39,
     "sprints": {
       "s1": {
-        "amount": 44,
-        "t1": 7,
-        "t2": 6,
+        "amount": 79,
+        "t1": 8,
+        "t2": 9,
         "t3": 1,
         "t4": true
       }
@@ -33,6 +33,9 @@
         "level": 0
       },
       "SocialConnector": {
+        "level": 0
+      },
+      "TrueTime": {
         "level": 0
       }
     }

@@ -1,0 +1,69 @@
+& {
+    margin-top: px(40);
+    padding-top: px(80);
+    background: $color3;
+}
+
+.title {
+    margin-left: px(78);
+    color: $color2;
+    font-size: px(42);
+    font-weight: bold;
+}
+
+.pins {
+    display: flex;
+    flex-wrap: wrap;
+
+    .pinItem {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 25%;
+        width: px(240);
+
+        .pinName {
+            margin-top: px(52);
+            color: $color2;
+            font-size: px(32);
+        }
+
+        .icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: px(283);
+            margin-top: px(14);
+
+            .disabled {
+                filter: grayscale(100%);
+                opacity: .6;
+            }
+
+            .threeStars {
+                width: px(140);
+                margin-top: px(-8);
+            }
+
+            .twoStars {
+                width: px(100);
+                margin-top: px(-8);
+            }
+
+            .oneStar {
+                width: px(50);
+                margin-top: px(-8);
+            }
+
+            .goodStart {
+                width: px(194);
+            }
+
+            .sprint {
+                width: px(208);
+            }
+        }
+    }
+}

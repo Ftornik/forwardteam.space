@@ -10,7 +10,7 @@ import Meta from './Meta';
 import * as Shared from 'components/Shared';
 import * as User from 'components/User';
 
-class HomePage extends Component {
+class UserPage extends Component {
     render = () => {
         const { params } = this.props;
         const userId = params.id;
@@ -40,4 +40,4 @@ class HomePage extends Component {
     }
 }
 
-export default HomePage;
+export default UserPage;

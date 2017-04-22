@@ -6,6 +6,7 @@ const componentRoutes = (
     <Route>
         <IndexRoute component={ Page.Home }/>
         <Route path="id/:id" component={ Page.User }/>
+        <Route path="team/:id" component={ Page.Team }/>
         <Route path="*" component={ Page.NotFound } status={ 404 }/>
     </Route>
 );
