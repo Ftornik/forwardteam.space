@@ -5,6 +5,7 @@ import UserApi from 'api/Users';
 import PinApi from 'api/Pins';
 import SprintApi from 'api/Sprints';
 import ChallengeApi from 'api/Challenges';
+import TeamApi from 'api/Teams';
 
 import Meta from './Meta';
 import * as Shared from 'components/Shared';
@@ -16,7 +17,8 @@ class UserPage extends Component {
         const userId = params.id;
 
         const user = UserApi.getById(userId);
-        const pins = PinApi.getAll();
+        const team = TeamApi.getById(user.team);
+        const pins = PinApi.getAll({ type: 'personal' });
         const sprint = SprintApi.getById('s1');
         const challenges = user.progress.challenges ? user.progress.challenges.map((challenge) => {
             return ChallengeApi.getById(challenge.id);
@@ -30,7 +32,7 @@ class UserPage extends Component {
             <div>
                 <Helmet { ...Meta() }/>
                 <Shared.Header/>
-                <User.Info user={ user }/>
+                <User.Info user={ user } team={ team } />
                 <User.Sprint user={ user } sprint={ sprint }/>
                 { user.team === 'kiev' ? <User.Question/> : null }
                 <User.Challenge user={ user } challenges={ challenges } />

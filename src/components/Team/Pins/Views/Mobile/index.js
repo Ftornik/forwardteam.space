@@ -51,7 +51,7 @@ function Pins(props) {
         }
 
         return (
-            <div className={ Styles.pinItem } key={ pin.id }>
+            <div className={ Styles.pinItem } key={ pin.id } onClick={ onClick(pin.url ? pin.url[team.id] : null) }>
                 <h3 className={ Styles.pinName }>{ pin.title }</h3>
                 <div className={ Styles.icons }>
                     <Pin className={ pinClass }/>

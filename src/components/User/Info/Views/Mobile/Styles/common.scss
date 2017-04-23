@@ -46,6 +46,14 @@
         color: $color2;
         font-size: px(56);
       }
+      .team {
+        a {
+          color: $color4;
+          text-decoration: underline;
+        }
+        font-size: px(56);
+        margin-left: px(20);
+      }
 
       .progressBlock {
         width: px(768);

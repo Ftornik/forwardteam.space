@@ -1,5 +1,5 @@
 const config = {
-    id: 'Team.Pins'
+    id: 'Team.Members'
 };
 
 export default config;

@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 
 import TeamApi from 'api/Teams';
 import PinApi from 'api/Pins';
+import UserApi from 'api/Users';
 
 import Meta from './Meta';
 import * as Shared from 'components/Shared';
@@ -14,20 +15,22 @@ class TeamPage extends Component {
         const teamId = params.id;
 
         const team = TeamApi.getById(teamId);
-        const pins = PinApi.getAll({
-            type: 'team'
-        });
-
         if (!team) {
             return null;
         }
+
+        const pins = PinApi.getAll({
+            type: 'team'
+        });
+        const members = UserApi.getByTeam(teamId);
 
         return (
             <div>
                 <Helmet { ...Meta() }/>
                 <Shared.Header/>
                 <Team.Info team={ team }/>
-                <Team.Pins pins={ pins }/>
+                <Team.Members users={ members }/>
+                <Team.Pins pins={ pins } team={ team }/>
             </div>
         );
     }

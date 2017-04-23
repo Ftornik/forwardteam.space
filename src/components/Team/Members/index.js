@@ -10,14 +10,13 @@ import React, { PropTypes, Component } from 'react';
  */
 import Mobile from './Views/Mobile';
 
-class Info extends Component {
+class Members extends Component {
     /**
      * [CPT]
      * Component prop types
      */
     static propTypes = {
-        user: PropTypes.object.isRequired,
-        team: PropTypes.object.isRequired
+        users: PropTypes.array.isRequired
     };
 
     /**
@@ -41,4 +40,4 @@ class Info extends Component {
  * [IE]
  * Export
  */
-export default Info;
+export default Members;

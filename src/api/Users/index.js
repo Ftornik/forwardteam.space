@@ -9,4 +9,21 @@ export default class Users {
             }
         }
     }
+
+    static getByTeam(teamId) {
+        return Object.keys(db).map((key) => {
+            return db[key];
+        }).filter((user) => {
+            return user.team === teamId;
+        }).sort((user1, user2) => {
+            if (user1.lastName < user2.lastName) {
+                return -1;
+            }
+            if (user1.lastName > user2.lastName) {
+                return 1;
+            }
+
+            return 0;
+        });
+    }
 }

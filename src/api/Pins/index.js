@@ -9,8 +9,8 @@ class Pins {
         return db[pinId];
     }
 
-    static getAll() {
-        return Object.keys(db).map((k) => db[k]);
+    static getAll({ type }) {
+        return Object.keys(db[type]).map((k) => db[type][k]);
     }
 }
 

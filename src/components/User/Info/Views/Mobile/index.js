@@ -3,6 +3,7 @@
  * Library Import
  */
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 
 /**
  * [IS]
@@ -14,7 +15,7 @@ import Male from 'components/Assets/Male';
 import Female from 'components/Assets/Female';
 
 function Info(props) {
-    const { user } = props;
+    const { user, team } = props;
     const progressStyle = {
         width: `${user.progress.amount}%`
     };
@@ -27,6 +28,7 @@ function Info(props) {
                 <div className={ Styles.image }>{ avatar }</div>
                 <div className={ Styles.information }>
                     <span className={ Styles.name }>{ `${user.firstName} ${user.lastName}` }</span>
+                    <span className={ Styles.team }><Link to={ `/team/${user.team}` }>{ team.name }</Link></span>
                     <div className={ Styles.progressBlock }>
                         <div className={ Styles.statusNames }>
                             <span className={ Styles.name }>Junior</span>

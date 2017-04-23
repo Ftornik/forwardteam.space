@@ -1,12 +1,2 @@
-export Bible365 from './Bible365.json';
-export BibleDigger from './BibleDigger.json';
-// export BookEle from './BookEle.json';
-export BookEleEGW from './BookEleEGW.json';
-export BookWorm from './BookWorm.json';
-export BookWormEGW from './BookWormEGW.json';
-export GoodStart from './GoodStart.json';
-export Challenger from './Challenger.json';
-export SocialConnector from './SocialConnector.json';
-export PlannerB from './PlannerB.json';
-export TrueTime from './TrueTime.json';
-export IronPray from './IronPray.json';
+export * as personal from './personal';
+export * as team from './team';

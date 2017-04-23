@@ -1,6 +1,5 @@
 export DT from './K-DT.json';
 export RS from './K-RS.json';
-export VS from './K-VS.json';
 export BB from './K-BB.json';
 export IK from './K-IK.json';
 export NG from './K-NG.json';
