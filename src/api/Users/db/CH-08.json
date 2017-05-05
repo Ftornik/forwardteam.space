@@ -6,12 +6,12 @@
   "level": "junior",
   "team": "chernigov",
   "progress": {
-    "amount": 7,
+    "amount": 11,
     "sprints": {
       "s1": {
-        "amount": 4,
+        "amount": 6,
         "t1": 1,
-        "t2": 1,
+        "t2": 2,
         "t3": 0
       }
     },
@@ -23,13 +23,13 @@
       },
       {
         "id": "init-2",
-        "done": false,
+        "done": true,
         "visible": true
       },
       {
         "id": "init-3",
         "done": false,
-        "visible": false
+        "visible": true
       }
     ],
     "pins": {

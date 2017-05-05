@@ -6,25 +6,25 @@
   "level": "junior",
   "team": "chernigov",
   "progress": {
-    "amount": 0,
+    "amount": 7,
     "sprints": {
       "s1": {
-        "amount": 0,
+        "amount": 4,
         "t1": 1,
-        "t2": 0,
+        "t2": 1,
         "t3": 0
       }
     },
     "challenges": [
       {
         "id": "init-1",
-        "done": false,
+        "done": true,
         "visible": true
       },
       {
         "id": "init-2",
         "done": false,
-        "visible": false
+        "visible": true
       },
       {
         "id": "init-3",
