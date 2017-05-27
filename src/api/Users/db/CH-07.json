@@ -23,13 +23,13 @@
       },
       {
         "id": "init-2",
-        "done": false,
+        "done": true,
         "visible": true
       },
       {
         "id": "init-3",
-        "done": false,
-        "visible": false
+        "done": true,
+        "visible": true
       }
     ],
     "pins": {
@@ -37,6 +37,9 @@
         "level": 0
       },
       "SocialConnector": {
+        "level": 0
+      },
+      "GoodStart": {
         "level": 0
       }
     }

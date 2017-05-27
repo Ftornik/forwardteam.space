@@ -28,7 +28,7 @@
       },
       {
         "id": "init-3",
-        "done": false,
+        "done": true,
         "visible": true
       }
     ],
@@ -37,6 +37,9 @@
         "level": 0
       },
       "SocialConnector": {
+        "level": 0
+      },
+      "GoodStart": {
         "level": 0
       }
     }
