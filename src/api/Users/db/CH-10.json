@@ -18,18 +18,8 @@
     },
     "challenges": [
       {
-        "id": "init-1",
-        "done": true,
-        "visible": true
-      },
-      {
-        "id": "init-2",
-        "done": true,
-        "visible": true
-      },
-      {
-        "id": "init-3",
-        "done": true,
+        "id": "s1-c1",
+        "done": false,
         "visible": true
       }
     ],

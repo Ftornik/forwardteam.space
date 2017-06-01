@@ -7,4 +7,6 @@ export BookWorm from './BookWorm';
 export BookWormEGW from './BookWormEGW';
 export Challenger from './Challenger';
 export SocialConnector from './SocialConnector';
+export IronPray from './IronPray';
+export TrueTime from './TrueTime';
 export ComingSoon from './ComingSoon';

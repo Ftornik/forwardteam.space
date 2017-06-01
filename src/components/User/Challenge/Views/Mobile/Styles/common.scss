@@ -17,12 +17,16 @@
     }
 
     .challenges {
-      margin-top: px(62);
+      margin-top: px(30);
+      margin-bottom: px(30);
 
       p {
-        display: flex;
         color: $color2;
         font-size: px(32);
+
+        a {
+          color: #ff5959;
+        }
       }
 
       .item {

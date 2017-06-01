@@ -17,19 +17,9 @@
     },
     "challenges": [
       {
-        "id": "init-1",
-        "done": true,
-        "visible": true
-      },
-      {
-        "id": "init-2",
+        "id": "s1-c1",
         "done": false,
         "visible": true
-      },
-      {
-        "id": "init-3",
-        "done": false,
-        "visible": false
       }
     ],
     "pins": {

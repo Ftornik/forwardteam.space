@@ -39,7 +39,7 @@ function Challenge(props) {
         }
 
         const challengeClass = cx({
-            [Styles.item]: true,
+            [Styles.item]: false,
             [Styles.active]: challenge.done
         });
 
@@ -53,7 +53,7 @@ function Challenge(props) {
             <div className={ Styles.info }>
                 <div className={ Styles.title }>
                     <span className={ Styles.questionMonth }>Челендж месяца</span>&nbsp;
-                    <span className={ Styles.month }>(май)</span>
+                    <span className={ Styles.month }>(июнь)</span>
                 </div>
                 <div className={ Styles.challenges }>
                     { challenges$.length ? challenges$ : defaultChallenges$ }
