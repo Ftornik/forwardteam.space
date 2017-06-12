@@ -6,11 +6,11 @@
   "level": "junior",
   "team": "chernigov",
   "progress": {
-    "amount": 11,
+    "amount": 9,
     "sprints": {
       "s1": {
-        "amount": 6,
-        "t1": 1,
+        "amount": 17,
+        "t1": 3,
         "t2": 2,
         "t3": 0
       }

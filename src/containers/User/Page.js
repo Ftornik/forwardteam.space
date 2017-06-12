@@ -34,7 +34,7 @@ class UserPage extends Component {
                 <Shared.Header/>
                 <User.Info user={ user } team={ team } />
                 <User.Sprint user={ user } sprint={ sprint }/>
-                { user.team === 'kiev' && false ? <User.Question/> : null }
+                { user.team === 'chernigov' ? <User.Question/> : null }
                 <User.Challenge user={ user } challenges={ challenges } />
                 <User.Pins user={ user } pins={ pins }/>
             </div>
