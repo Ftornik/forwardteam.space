@@ -18,7 +18,12 @@
     },
     "challenges": [
       {
-        "id": "s1-c1",
+        "id": "s1-c2-1",
+        "done": false,
+        "visible": true
+      },
+      {
+        "id": "s1-c2-2",
         "done": false,
         "visible": true
       }
