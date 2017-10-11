@@ -6,16 +6,22 @@
   "level": "junior",
   "team": "kiev",
   "progress": {
-    "amount": 39,
+    "amount": 7,
+    "currentSprint": "l2s1",
     "sprints": {
-      "s1": {
-        "amount": 79,
-        "t1": 8,
-        "t2": 9,
-        "t3": 1,
-        "t4": true
+      "l2s1": {
+        "amount": 19,
+        "t1": 1,
+        "t2": 1
       }
     },
+    "challenges": [
+      {
+        "id": "l2-s1-c1",
+        "done": false,
+        "visible": true
+      }
+    ],
     "pins": {
       "GoodStart": {
         "level": 0

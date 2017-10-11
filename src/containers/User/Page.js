@@ -20,7 +20,9 @@ class UserPage extends Component {
         const user = UserApi.getById(userId);
         const team = TeamApi.getById(user.team);
         const pins = PinApi.getAll({ type: 'personal' });
-        const sprint = SprintApi.getById('s1');
+
+        const currentSprint = user.progress.currentSprint || 'l1s1';
+        const sprint = SprintApi.getById(currentSprint);
         const challenges = user.progress.challenges ? user.progress.challenges.map((challenge) => {
             return ChallengeApi.getById(challenge.id);
         }) : [];

@@ -6,15 +6,22 @@
   "level": "junior",
   "team": "kiev",
   "progress": {
-    "amount": 21,
+    "amount": 7,
+    "currentSprint": "l2s1",
     "sprints": {
-      "s1": {
-        "amount": 42,
-        "t1": 8,
-        "t2": 3,
-        "t3": 1
+      "l2s1": {
+        "amount": 19,
+        "t1": 1,
+        "t2": 1
       }
     },
+    "challenges": [
+      {
+        "id": "l2-s1-c1",
+        "done": false,
+        "visible": true
+      }
+    ],
     "pins": {
       "BibleDigger": {
         "level": 0

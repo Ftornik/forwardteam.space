@@ -25,3 +25,8 @@ global.webpackIsomorphicTools = new WebpackIsomorphicTools(require('../webpack/w
     .server(rootDir, function () {
         require('../src/server');
     });
+
+process.on('unhandledRejection', err => {
+    console.log("Caught unhandledRejection");
+    console.log(err);
+});

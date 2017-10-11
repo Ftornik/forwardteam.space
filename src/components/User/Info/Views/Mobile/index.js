@@ -21,6 +21,15 @@ function Info(props) {
     };
 
     const avatar = user.gender === 'female' ? <Female className={ Styles.female }/> : <Male className={ Styles.male }/>;
+    const levels = [user.level];
+    switch (user.level) {
+        case 'junior':
+            levels.push('senior');
+            break;
+        case 'senior':
+            levels.push('staff');
+            break;
+    }
 
     return (
         <section className={ Styles.infoComponent }>
@@ -31,8 +40,8 @@ function Info(props) {
                     <span className={ Styles.team }><Link to={ `/team/${user.team}` }>{ team.name }</Link></span>
                     <div className={ Styles.progressBlock }>
                         <div className={ Styles.statusNames }>
-                            <span className={ Styles.name }>Junior</span>
-                            <span className={ Styles.name }>Senior</span>
+                            <span className={ Styles.name }>{ levels[0] }</span>
+                            <span className={ Styles.name }>{ levels[1] }</span>
                         </div>
                         <div className={ Styles.progressBar }>
                             <div className={ Styles.progress } style={ progressStyle }/>

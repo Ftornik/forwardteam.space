@@ -53,7 +53,7 @@ function Challenge(props) {
             <div className={ Styles.info }>
                 <div className={ Styles.title }>
                     <span className={ Styles.questionMonth }>Челлендж месяца</span>&nbsp;
-                    <span className={ Styles.month }>(июль)</span>
+                    <span className={ Styles.month }/>
                 </div>
                 <div className={ Styles.challenges }>
                     { challenges$.length ? challenges$ : defaultChallenges$ }
