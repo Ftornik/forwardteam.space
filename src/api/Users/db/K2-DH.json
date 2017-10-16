@@ -10,8 +10,8 @@
     "currentSprint": "l1s1",
     "sprints": {
       "l1s1": {
-        "amount": 0,
-        "t1": 0,
+        "amount": 3,
+        "t1": 1,
         "t2": 0,
         "t3": 0
       }
