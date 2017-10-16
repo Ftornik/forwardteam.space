@@ -1,0 +1,38 @@
+{
+  "id": "ryqZvMMab",
+  "firstName": "Диана-Мария",
+  "lastName": "Москаленко",
+  "gender": "female",
+  "level": "junior",
+  "team": "kiev2",
+  "progress": {
+    "amount": 7,
+    "currentSprint": "l1s1",
+    "sprints": {
+      "l1s1": {
+        "amount": 0,
+        "t1": 0,
+        "t2": 0,
+        "t3": 0
+      }
+    },
+    "challenges": [
+      {
+        "id": "init-1",
+        "done": false,
+        "visible": true
+      },
+      {
+        "id": "init-2",
+        "done": false,
+        "visible": false
+      },
+      {
+        "id": "init-3",
+        "done": false,
+        "visible": false
+      }
+    ],
+    "pins": {}
+  }
+}
